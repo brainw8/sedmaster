@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <div class="positioner">
+    <header class="main-header clearfix">
+      <nav>
+        <ul>
+          <li class="nav-menu-left"><a href="#"> информация</a></li>
+          <li class="nav-menu-left"><a href="#">фото и видео</a></li>
+          <li class="nav-menu-right"><a href="#">карта штата</a></li>
+          <li class="nav-menu-right"><a href="#">гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="index-symbol">
+        <img src="/img/logo.png" alt="" width="138" height="70">
+      </div>
+    </header>
+    <div class="main-top-img">
+      <div class="index-welcome">
+        <img src="/img/welcome.png" alt="" width="256" height="86">
+      </div>
+      <div class="index-sedona">
+        <img src="/img/sedona.png" alt="sedona" width="458" height="214">
+      </div>
+    </div>
+    <div class="bottom-peace-img">
+      <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,
+          зАСЛУЖИвающий большего!
+      </h2>
+      <b>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
+    </div>
+
+    <main class="index-main-content clearfix">
+
+
+      <div class="photoblock-text photoblock-left">
+        <h2>Настоящий городок</h2>
+        <span>--#1--</span>
+        <p>
+          СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+        </p>
+      </div>
+
+      <div class="photoblock-pic photoblock-right">
+        <img src="/img/photoblock-img1.jpg" alt="pic1" width="800" height="256">
+      </div>
+
+      <article class="index-middle-adv">
+        <img src="/img/house-icn.jpg" alt="" width="75" height="72">
+        <h2>
+          Жилье
+        </h2>
+        <p>
+          Рекомендуем пожить в настоящем мотеле, все как в кино!
+        </p>
+      </article>
+
+      <article class="index-middle-adv">
+        <img src="/img/burger-icn.jpg" alt="" width="74" height="70">
+        <h2>Еда</h2>
+        <p>
+          Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+        </p>
+      </article>
+
+      <article class="index-middle-adv">
+        <img src="/img/present-icn.jpg" alt="" width="64" height="76">
+        <h2>Сувениры</h2>
+        <p>
+          Не только китайского,
+          <br> но и местного производства!</p>
+      </article>
+
+      <div class="photoblock-pic photoblock-left">
+        <img src="/img/photoblock-img2.jpg" alt="pic2" width="800" height="256">
+      </div>
+      <div class="photoblock-text photoblock-right">
+        <h2>ТАМ ЕСТЬ <br>
+          Мост дьявола
+        </h2>
+        <span>--#2--</span>
+        <p>
+          Да, по нему можно пройти! Если конечно вы осмелитесь
+        </p>
+      </div>
+
+
+      <article class="index-block-bottom">
+        <h2>
+          НЕБОЛЬШАЯ <br>
+          ПЛОЩАДЬ
+        </h2>
+        <span>--#3--</span>
+        <p>
+          ВСЕ достопримечательности находятся очень близко
+        </p>
+      </article>
+
+      <article class="index-block-bottom">
+        <h2>
+          КРАСИВАЯ<br>
+          ДОРОГА
+        </h2>
+        <span>--#4--</span>
+        <p>
+          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+        </p>
+      </article>
+
+      <article class="index-block-bottom">
+        <h2>
+          МАЛО<br>
+          ТУРИСТОВ
+        </h2>
+        <span>--#5--</span>
+        <p>
+          Большинство едет в гранд каньон и толпится там
+        </p>
+      </article>
+    </main>
+
+    <div class="booking-block">
+     <div class="booking-block-visible">
+      <div class="booking-block-top">
+        <b class="booking-title">Заинтересовались?</b>
+        <p>
+          Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в седоне
+
+        </p>
+      </div>
+      <div class="booking-form-title">
+        <a href="#" class="booking-form-link">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </div>
+      </div>
+
+      <div class="booking-block-map">
+      <div class="booking-form-content">
+          <form action="scripts/index.php" method="post">
+            <label for="date_in"> дата заезда:
+              <input type="date" id="date_in" name="date-in" value="2016-04-24">
+            </label>
+            <label for="date_out"> дата выезда:
+              <input type="date" id="date_out" name="date-out" value="2016-07-04">
+            </label>
+            <div class="booking-input-bottom clearfix">
+              <label class=" booking-input-bottom-l" for="adults"> взрослые:
+                <input type="number" id="adults" name="adult-age" min="1" max="10" value="2">
+              </label>
+              <label class="booking-input-bottom-r" for="children"> дети:
+                <input type="number" id="children">
+              </label>
+            </div>
+            <button class="btn" type="submit">найти</button>
+          </form>
+        </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50944.418849119626!2d-111.79105952177613!3d34.86760989655023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1484040282347" width="1200" height="566" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+
+    <footer class="footer clearfix">
+
+      <section class="footer-section">
+        <span>#visitsedona</span>
+      </section>
+      <section class="footer-section">
+        <div class="footer-social footer-twiter">
+        </div>
+        <div class="footer-social footer-facebook">
+        </div>
+        <div class="footer-social footer-youtube">
+        </div>
+      </section>
+      <section class="footer-section">
+
+        <img src="/img/htmlacademy.png" alt="" width="195" height="39">
+      </section>
+
+    </footer>
+
+  </div>
+
+
+<script src="js/script.js"></script>
+</body>
+
 </html>
